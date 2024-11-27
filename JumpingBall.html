@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment</title>
+    <style>
+        .box{
+            height: 400px;
+            width: 600px;
+            background-color: blue;
+            position: relative;
+        }
+        .ball{
+            height: 70px;
+            width: 70px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0px;
+            animation: animatex 3s linear,animatey 1s ease-out alternate;
+            animation-iteration-count: infinite;
+        }
+        @keyframes animatex{
+           from{left: 0;}
+           to{left:100%;}
+        }
+        @keyframes animatey{
+           from{bottom:0;}
+           to{bottom: 100%;} 
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
